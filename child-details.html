@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Sponsor [Child Name] | Child Details | Aloysius Ministries</title>
+    <meta name="description" content="Learn about [Child Name] and sponsor their education, meals, and future for $50/month through Aloysius Ministries in Uganda.">
+    <meta name="keywords" content="sponsor child Uganda, child sponsorship details, help child Uganda, sponsor [Child Name], Aloysius Ministries child">
+    <meta name="author" content="Aloysius Ministries">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aloysiusministries.org/child-details.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sponsor [Child Name] | Aloysius Ministries">
+    <meta property="og:description" content="Transform [Child Name]'s life with education, meals, and hope for $50/month.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aloysiusministries.org/child-details.html">
+    <meta property="og:image" content="https://aloysiusministries.org/images/child-sponsorship.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sponsor [Child Name] | Aloysius Ministries">
+    <meta name="twitter:description" content="Help transform a child's life with education and hope.">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Critical CSS -->
+    <style>
+        body{font-family:'Poppins',sans-serif;margin:0;padding:0;line-height:1.6}
+        .navbar{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);position:fixed;top:0;width:100%;z-index:1000;padding:1rem 0}
+        .child-hero{padding:120px 0 60px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+    </style>
+    
+    <!-- Deferred CSS Loading -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Aloysius Ministries</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="children.html" class="nav-link">Find a Child</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:support@aloysiusministries.org" class="nav-link sponsor-btn">Sponsor Now</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Child Hero Section -->
+    <section class="child-hero">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > 
+                <a href="children.html">Find a Child</a> > 
+                <span id="childNameBreadcrumb">Child Details</span>
+            </div>
+            <div class="child-hero-content">
+                <div class="child-hero-text">
+                    <h1 id="childHeroName">Loading...</h1>
+                    <p class="child-hero-subtitle">Transform this child's life with education, meals, and hope</p>
+                    <div class="child-hero-stats">
+                        <div class="stat">
+                            <span class="stat-label">Age</span>
+                            <span class="stat-number" id="childHeroAge">-</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Waiting</span>
+                            <span class="stat-number" id="childHeroWaiting">- days</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Sponsorship</span>
+                            <span class="stat-number">$50/month</span>
+                        </div>
+                    </div>
+                    <div class="hero-sponsor-btn">
+                        <a href="#" id="heroSponsorBtn" class="btn btn-primary btn-large">
+                            <i class="fas fa-heart"></i> Sponsor Now
+                        </a>
+                    </div>
+                </div>
+                <div class="child-hero-image">
+                    <img id="childHeroPhoto" src="" alt="" loading="eager">
+                    <div class="child-id-badge" id="childHeroId">#000</div>
+                    <div class="status-badge" id="childHeroStatus"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Child Details Section -->
+    <section class="child-details-section">
+        <div class="container">
+            <div class="child-details-grid">
+                <!-- Main Details -->
+                <div class="child-main-details">
+                    <div class="detail-card">
+                        <h2>About <span id="childDetailName">This Child</span></h2>
+                        <div class="child-story-full">
+                            <p id="childStoryDetail">Loading child's story...</p>
+                        </div>
+                        
+                        <div class="child-info-grid">
+                            <div class="info-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <label>Full Name</label>
+                                    <span id="childFullName">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <div>
+                                    <label>Age</label>
+                                    <span id="childAge">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-venus-mars"></i>
+                                <div>
+                                    <label>Gender</label>
+                                    <span id="childGender">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <label>Location</label>
+                                    <span id="childLocation">Kyenjojo, Uganda</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <label>Waiting Period</label>
+                                    <span id="childWaitingPeriod">Loading...</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-id-card"></i>
+                                <div>
+                                    <label>Child ID</label>
+                                    <span id="childIdDetail">#000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Needs & Goals -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-bullseye"></i> Immediate Needs</h3>
+                        <div class="needs-list" id="childNeeds">
+                            <!-- Needs will be populated here -->
+                        </div>
+                    </div>
+
+                    <!-- Impact Section -->
+                    <div class="detail-card">
+                        <h3><i class="fas fa-heart"></i> Your Sponsorship Impact</h3>
+                        <div class="impact-items">
+                            <div class="impact-item">
+                                <i class="fas fa-utensils"></i>
+                                <div>
+                                    <h4>Daily Nutrition</h4>
+                                    <p>Nutritious meals and clean water every day</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Quality Education</h4>
+                                    <p>School fees, uniforms, books, and supplies</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-stethoscope"></i>
+                                <div>
+                                    <h4>Healthcare</h4>
+                                    <p>Regular health checkups and medical care</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-bible"></i>
+                                <div>
+                                    <h4>Spiritual Growth</h4>
+                                    <p>Bible study and Christian discipleship</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-home"></i>
+                                <div>
+                                    <h4>Safe Environment</h4>
+                                    <p>Protective care and nurturing community</p>
+                                </div>
+                            </div>
+                            <div class="impact-item">
+                                <i class="fas fa-tools"></i>
+                                <div>
+                                    <h4>Life Skills</h4>
+                                    <p>Training and preparation for future independence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sponsor Sidebar -->
+                <div class="sponsor-sidebar">
+                    <div class="sponsor-card">
+                        <div class="sponsor-card-header">
+                            <h3>Sponsor <span id="sponsorCardName">This Child</span></h3>
+                            <p>Transform a life for just $50/month</p>
+                        </div>
+                        
+                        <div class="sponsor-breakdown">
+                            <h4>Where Your $50 Goes:</h4>
+                            <div class="breakdown-item">
+                                <span>Education & School Supplies</span>
+                                <span>$20</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Daily Meals & Nutrition</span>
+                                <span>$15</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Healthcare & Medical</span>
+                                <span>$8</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Shelter & Clothing</span>
+                                <span>$5</span>
+                            </div>
+                            <div class="breakdown-item">
+                                <span>Life Skills & Training</span>
+                                <span>$2</span>
+                            </div>
+                            <div class="breakdown-total">
+                                <span><strong>Total Monthly Impact</strong></span>
+                                <span><strong>$50</strong></span>
+                            </div>
+                        </div>
+
+                        <div class="sponsor-actions">
+                            <a href="#" id="primarySponsorBtn" class="btn btn-primary btn-large">
+                                <i class="fas fa-heart"></i> Sponsor Now
+                            </a>
+                            <p class="sponsor-note">100% of your donation goes directly to supporting this child</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional Info -->
+                    <div class="info-card">
+                        <h4><i class="fas fa-info-circle"></i> Good to Know</h4>
+                        <ul>
+                            <li>Sponsorship starts immediately upon confirmation</li>
+                            <li>You'll receive regular updates and photos</li>
+                            <li>Direct communication with your sponsored child</li>
+                            <li>Cancel or modify anytime</li>
+                            <li>Tax-deductible in many countries</li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="contact-card">
+                        <h4><i class="fas fa-envelope"></i> Questions?</h4>
+                        <p>Contact our sponsorship team:</p>
+                        <div class="contact-info">
+                            <a href="mailto:support@aloysiusministries.org">
+                                <i class="fas fa-envelope"></i> support@aloysiusministries.org
+                            </a>
+                            <a href="https://wa.me/256787833539">
+                                <i class="fab fa-whatsapp"></i> +256 787 833 539
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Children Section -->
+    <section class="other-children">
+        <div class="container">
+            <h2>Other Children Waiting for Sponsors</h2>
+            <div class="other-children-grid" id="otherChildrenGrid">
+                <!-- Other children will be loaded here -->
+            </div>
+            <div class="view-all-btn">
+                <a href="children.html" class="btn btn-secondary">
+                    <i class="fas fa-users"></i> View All Children
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Aloysius Ministries</span>
+                    </div>
+                    <p>A life-changing ministry dedicated to helping children in need through sponsorship programs and spreading the gospel of Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/aphmug" target="_blank" rel="noopener" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/pastor_aloysius" target="_blank" rel="noopener" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@Pastor_Aloysius" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/256787833539" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="children.html">Find a Child</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:support@aloysiusministries.org">Sponsor Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sponsorship Info</h4>
+                    <ul>
+                        <li>Monthly Sponsorship: $50</li>
+                        <li>Children Served: 250+</li>
+                        <li>Location: Kyenjojo, Uganda</li>
+                        <li>100% goes to children</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Ministry</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> GR2R+87 Lwebali, Kyenjojo - Uganda</li>
+                        <li><i class="fab fa-whatsapp"></i> +256 787 833 539</li>
+                        <li><i class="fas fa-phone"></i> +256 785 461 966</li>
+                        <li><i class="fas fa-envelope"></i> support@aloysiusministries.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aloysius Ministries. All rights reserved. | Child Sponsorship Ministry in Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script>
+        // Sample children data (same as children.html)
+        const childrenData = [
+            {
+                id: "#001",
+                name: "Grace Nakato",
+                age: 8,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 245,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                story: "Grace dreams of becoming a teacher. She loves learning and helping her younger siblings with their homework. Despite facing many challenges, Grace maintains a bright smile and positive attitude. She excels in reading and always volunteers to help classmates who are struggling. Grace lives with her grandmother and two younger siblings in a small home near our ministry. Her favorite subject is English, and she loves to write stories about adventures and friendship. Grace's dream is to become a teacher so she can help other children learn and grow, just like her teachers have helped her.",
+                needs: ["education", "meals", "school supplies"],
+                fullStory: "Grace Nakato is an incredible 8-year-old girl whose determination and kindness inspire everyone around her. Born in a small village near Kyenjojo, Grace has faced numerous challenges but continues to shine brightly. After losing her parents in a tragic accident when she was just 5 years old, Grace went to live with her elderly grandmother, who struggles to provide for Grace and her two younger siblings.\n\nDespite these hardships, Grace has shown remarkable resilience. She walks 2 kilometers to school every day, often helping carry her 4-year-old brother on her back. Her teacher describes her as one of the most dedicated students, always eager to learn and help others. Grace has a natural gift for languages and dreams of becoming a teacher to help other children who face similar challenges.\n\nGrace loves reading stories and often creates her own tales to entertain her siblings. She has learned to cook basic meals to help her grandmother and takes on responsibilities far beyond her years. Her favorite activity is the Bible study sessions at our ministry, where she enthusiastically participates and has memorized many verses.\n\nWith your sponsorship, Grace can continue her education, receive proper nutrition, and have the support she needs to achieve her dreams. Your $50 monthly gift will provide her with school fees, uniforms, books, daily meals, and medical care. Most importantly, it will give Grace hope for a brighter future."
+            },
+            {
+                id: "#002",
+                name: "Samuel Okello",
+                age: 12,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 189,
+                status: "at-risk",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+                story: "Samuel is a bright boy who excels in mathematics. He dreams of becoming an engineer to help build his community. Samuel has shown exceptional academic ability despite the challenges he faces at home. He often tutors younger children in mathematics and has a natural ability to explain complex concepts in simple terms. Samuel lives with his aunt after being orphaned at age 7. His passion for building and creating is evident in the small structures he builds from discarded materials. With proper support, Samuel has the potential to achieve great things.",
+                needs: ["education", "medical care", "nutrition"],
+                fullStory: "Samuel Okello is a remarkable 12-year-old boy with an extraordinary mind for mathematics and engineering. Growing up in challenging circumstances hasn't dampened his curiosity or determination to learn and create.\n\nSamuel lost both parents to illness when he was 7 years old and now lives with his aunt, who works as a small-scale farmer. Despite limited resources, Samuel has consistently been among the top students in his class, particularly excelling in mathematics and science. His teachers are amazed by his ability to solve complex problems and his natural leadership skills.\n\nWhat sets Samuel apart is his compassion for others. He regularly helps younger children with their homework and has created a small study group where he teaches mathematics to his peers. Samuel dreams of becoming an engineer to help build better infrastructure in his community, including clean water systems and improved roads.\n\nIn his free time, Samuel collects discarded materials and builds small models of bridges, houses, and machines. His creativity and ingenuity are remarkable, and he often comes up with innovative solutions to everyday problems in his community.\n\nSamuel is currently at risk of dropping out of school due to financial constraints. Your sponsorship would ensure he receives the education he deserves, along with proper nutrition and healthcare. With your support, Samuel can continue his studies and one day achieve his dream of becoming an engineer who transforms his community."
+            },
+            // Add more children data as needed...
+        ];
+
+        let currentChild = null;
+
+        document.addEventListener('DOMContentLoaded', function() {
+            loadChildDetails();
+            loadOtherChildren();
+        });
+
+        function loadChildDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const childId = urlParams.get('id');
+            
+            // Find child by ID
+            currentChild = childrenData.find(child => child.id === childId);
+            
+            if (!currentChild) {
+                // Default to first child if ID not found
+                currentChild = childrenData[0];
+            }
+
+            // Update page title and meta
+            document.title = `Sponsor ${currentChild.name} | Child Details | Aloysius Ministries`;
+            
+            // Update all elements
+            updateChildDetails(currentChild);
+            updateSponsorButtons(currentChild);
+        }
+
+        function updateChildDetails(child) {
+            // Hero section
+            document.getElementById('childHeroName').textContent = child.name;
+            document.getElementById('childHeroAge').textContent = `${child.age} years`;
+            document.getElementById('childHeroWaiting').textContent = `${child.waitingDays} days`;
+            document.getElementById('childHeroPhoto').src = child.image;
+            document.getElementById('childHeroPhoto').alt = `Photo of ${child.name}`;
+            document.getElementById('childHeroId').textContent = child.id;
+            
+            // Status badge
+            const statusBadge = document.getElementById('childHeroStatus');
+            if (child.status === 'urgent') {
+                statusBadge.textContent = 'Urgent Need';
+                statusBadge.className = 'status-badge urgent';
+            } else if (child.status === 'medical') {
+                statusBadge.textContent = 'Medical Need';
+                statusBadge.className = 'status-badge medical';
+            } else if (child.status === 'at-risk') {
+                statusBadge.textContent = 'At Risk';
+                statusBadge.className = 'status-badge at-risk';
+            }
+
+            // Breadcrumb
+            document.getElementById('childNameBreadcrumb').textContent = child.name;
+
+            // Details section
+            document.getElementById('childDetailName').textContent = child.name;
+            document.getElementById('childStoryDetail').textContent = child.fullStory || child.story;
+            document.getElementById('childFullName').textContent = child.name;
+            document.getElementById('childAge').textContent = `${child.age} years old`;
+            document.getElementById('childGender').textContent = child.gender.charAt(0).toUpperCase() + child.gender.slice(1);
+            document.getElementById('childWaitingPeriod').textContent = `${child.waitingDays} days`;
+            document.getElementById('childIdDetail').textContent = child.id;
+
+            // Needs
+            const needsContainer = document.getElementById('childNeeds');
+            needsContainer.innerHTML = '';
+            if (child.needs) {
+                child.needs.forEach(need => {
+                    const needDiv = document.createElement('div');
+                    needDiv.className = 'need-item';
+                    needDiv.innerHTML = `
+                        <i class="fas fa-check-circle"></i>
+                        <span>${need.charAt(0).toUpperCase() + need.slice(1)}</span>
+                    `;
+                    needsContainer.appendChild(needDiv);
+                });
+            }
+
+            // Sponsor card
+            document.getElementById('sponsorCardName').textContent = child.name;
+        }
+
+        function updateSponsorButtons(child) {
+            const sponsorSubject = `Sponsor ${child.name} ${child.id}`;
+            const sponsorBody = `I would like to sponsor ${child.name} (${child.id}). Please provide me with more information about the sponsorship process and next steps.
+
+Child Details:
+- Name: ${child.name}
+- ID: ${child.id}
+- Age: ${child.age} years
+- Waiting: ${child.waitingDays} days
+
+I understand that the monthly sponsorship amount is $50 and that 100% goes directly to supporting the child.
+
+Please contact me to begin the sponsorship process.
+
+Thank you for the amazing work you do!`;
+
+            const sponsorUrl = `mailto:support@aloysiusministries.org?subject=${encodeURIComponent(sponsorSubject)}&body=${encodeURIComponent(sponsorBody)}`;
+            
+            document.getElementById('heroSponsorBtn').href = sponsorUrl;
+            document.getElementById('primarySponsorBtn').href = sponsorUrl;
+        }
+
+        function loadOtherChildren() {
+            const grid = document.getElementById('otherChildrenGrid');
+            
+            // Get 3 random other children
+            const otherChildren = childrenData
+                .filter(child => child.id !== currentChild?.id)
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 3);
+
+            otherChildren.forEach(child => {
+                const card = document.createElement('div');
+                card.className = 'other-child-card';
+                card.innerHTML = `
+                    <div class="other-child-image">
+                        <img src="${child.image}" alt="${child.name}" loading="lazy">
+                        <div class="other-child-id">${child.id}</div>
+                    </div>
+                    <div class="other-child-info">
+                        <h4>${child.name}</h4>
+                        <p>${child.age} years • ${child.waitingDays} days waiting</p>
+                        <div class="other-child-actions">
+                            <a href="child-details.html?id=${child.id}" class="btn btn-secondary btn-small">View Details</a>
+                            <a href="mailto:support@aloysiusministries.org?subject=Sponsor ${child.name} ${child.id}" class="btn btn-primary btn-small">Sponsor</a>
+                        </div>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

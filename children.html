@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Find a Child to Sponsor | Aloysius Ministries - Children in Need Uganda</title>
+    <meta name="description" content="Browse children in need of sponsorship in Uganda. Advanced search by age, gender, country, and special needs. Each child needs $50/month for education, meals, and hope.">
+    <meta name="keywords" content="find child sponsor Uganda, children in need Uganda, sponsor child Kyenjojo, Uganda children sponsorship, help children Uganda, sponsor a child Uganda, children at risk Uganda">
+    <meta name="author" content="Aloysius Ministries">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://aloysiusministries.org/children.html">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Find a Child to Sponsor | Aloysius Ministries">
+    <meta property="og:description" content="Browse children in need of sponsorship in Uganda. Advanced search and help transform a child's life for $50/month.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aloysiusministries.org/children.html">
+    <meta property="og:image" content="https://aloysiusministries.org/images/children-sponsorship.jpg">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Find a Child to Sponsor | Aloysius Ministries">
+    <meta name="twitter:description" content="Browse children in need and start sponsoring for $50/month.">
+    
+    <!-- Performance Optimization -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Critical CSS -->
+    <style>
+        body{font-family:'Poppins',sans-serif;margin:0;padding:0;line-height:1.6}
+        .navbar{background:rgba(255,255,255,0.95);backdrop-filter:blur(10px);position:fixed;top:0;width:100%;z-index:1000;padding:1rem 0}
+        .page-header{padding:120px 0 60px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;text-align:center}
+        .container{max-width:1200px;margin:0 auto;padding:0 20px}
+        .children-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin-top:2rem}
+    </style>
+    
+    <!-- Deferred CSS Loading -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"></noscript>
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"></noscript>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Children in Need of Sponsorship",
+        "description": "Find and sponsor a child in Uganda through Aloysius Ministries",
+        "url": "https://aloysiusministries.org/children.html",
+        "mainEntity": {
+            "@type": "NGO",
+            "name": "Aloysius Ministries",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "GR2R+87 Lwebali",
+                "addressLocality": "Kyenjojo",
+                "addressCountry": "Uganda"
+            }
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-heart"></i>
+                <span>Aloysius Ministries</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="children.html" class="nav-link active">Find a Child</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mailto:support@aloysiusministries.org" class="nav-link sponsor-btn">Sponsor Now</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Find Your Child to Sponsor</h1>
+            <p>Transform a child's life with education, meals, and hope for just $50/month</p>
+            <div class="header-stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalChildren">48</span>
+                    <span class="stat-label">Children Available</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">$50</span>
+                    <span class="stat-label">Monthly Sponsorship</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="filters-container">
+                <div class="filters-row">
+                    <div class="filter-group">
+                        <label for="searchName">Search by Name</label>
+                        <input type="text" id="searchName" placeholder="Enter child's name">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterCountry">Country</label>
+                        <select id="filterCountry">
+                            <option value="">All Countries</option>
+                            <option value="uganda">Uganda</option>
+                            <option value="kenya">Kenya</option>
+                            <option value="tanzania">Tanzania</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterAge">Age Range</label>
+                        <select id="filterAge">
+                            <option value="">All Ages</option>
+                            <option value="3-6">3-6 years</option>
+                            <option value="7-10">7-10 years</option>
+                            <option value="11-14">11-14 years</option>
+                            <option value="15-18">15-18 years</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterGender">Gender</label>
+                        <select id="filterGender">
+                            <option value="">All Genders</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="filterStatus">Special Needs</label>
+                        <select id="filterStatus">
+                            <option value="">All Children</option>
+                            <option value="at-risk">Children at Risk</option>
+                            <option value="urgent">Urgent Need</option>
+                            <option value="medical">Medical Needs</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="filters-actions">
+                    <button class="btn btn-primary" id="applyFilters">
+                        <i class="fas fa-search"></i> Apply Filters
+                    </button>
+                    <button class="btn btn-secondary" id="clearFilters">
+                        <i class="fas fa-times"></i> Clear All
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Sort Options -->
+            <div class="sort-container">
+                <label for="sortBy">Sort by:</label>
+                <select id="sortBy">
+                    <option value="waiting-desc">Longest Waiting</option>
+                    <option value="waiting-asc">Shortest Waiting</option>
+                    <option value="age-asc">Age (Youngest First)</option>
+                    <option value="age-desc">Age (Oldest First)</option>
+                    <option value="name-asc">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Children Grid -->
+    <section class="children-section">
+        <div class="container">
+            <div class="results-info">
+                <p><span id="resultCount">Showing 12 of 48 children</span></p>
+            </div>
+            
+            <div class="children-grid" id="childrenGrid">
+                <!-- Children will be loaded here dynamically -->
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-primary btn-large" id="loadMoreBtn">
+                    <i class="fas fa-plus-circle"></i> Load More Children
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-heart"></i>
+                        <span>Aloysius Ministries</span>
+                    </div>
+                    <p>A life-changing ministry dedicated to helping children in need through sponsorship programs and spreading the gospel of Jesus Christ.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com/aphmug" target="_blank" rel="noopener" aria-label="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/pastor_aloysius" target="_blank" rel="noopener" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/@Pastor_Aloysius" target="_blank" rel="noopener" aria-label="Subscribe to our YouTube channel"><i class="fab fa-youtube"></i></a>
+                        <a href="https://wa.me/256787833539" target="_blank" rel="noopener" aria-label="Contact us on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="children.html">Find a Child</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="mailto:support@aloysiusministries.org">Sponsor Now</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Sponsorship Info</h4>
+                    <ul>
+                        <li>Monthly Sponsorship: $50</li>
+                        <li>Children Served: 250+</li>
+                        <li>Location: Kyenjojo, Uganda</li>
+                        <li>100% goes to children</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Ministry</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> GR2R+87 Lwebali, Kyenjojo - Uganda</li>
+                        <li><i class="fab fa-whatsapp"></i> +256 787 833 539</li>
+                        <li><i class="fas fa-phone"></i> +256 785 461 966</li>
+                        <li><i class="fas fa-envelope"></i> support@aloysiusministries.org</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Aloysius Ministries. All rights reserved. | Child Sponsorship Ministry in Uganda</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+    <script>
+        // Sample children data with unique IDs
+        const childrenData = [
+            {
+                id: "#001",
+                name: "Grace Nakato",
+                age: 8,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 245,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1544717297-fa95b6ee9643?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Grace dreams of becoming a teacher. She loves learning and helping her younger siblings with their homework.",
+                needs: ["education", "meals", "school supplies"]
+            },
+            {
+                id: "#002",
+                name: "Samuel Okello",
+                age: 12,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 189,
+                status: "at-risk",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Samuel is a bright boy who excels in mathematics. He dreams of becoming an engineer to help build his community.",
+                needs: ["education", "medical care", "nutrition"]
+            },
+            {
+                id: "#003",
+                name: "Mary Auma",
+                age: 6,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 156,
+                status: "medical",
+                image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Mary is a joyful child who loves singing in the children's choir. She needs medical attention for her eyesight.",
+                needs: ["medical care", "education", "nutrition"]
+            },
+            {
+                id: "#004",
+                name: "David Mugisha",
+                age: 14,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 78,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "David is passionate about agriculture and wants to learn modern farming techniques to help feed his community.",
+                needs: ["education", "skills training", "nutrition"]
+            },
+            {
+                id: "#005",
+                name: "Faith Namukasa",
+                age: 10,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 312,
+                status: "at-risk",
+                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Faith loves to draw and paint. She creates beautiful artwork and dreams of becoming an artist one day.",
+                needs: ["education", "art supplies", "meals"]
+            },
+            {
+                id: "#006",
+                name: "Peter Sserwadda",
+                age: 7,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 267,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1603123145137-e5a6a1d8fcd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Peter is an energetic boy who loves playing football. He dreams of playing for Uganda's national team.",
+                needs: ["education", "sports equipment", "nutrition"]
+            },
+            {
+                id: "#007",
+                name: "Sarah Nakamya",
+                age: 11,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 134,
+                status: "medical",
+                image: "https://images.unsplash.com/photo-1588099768923-bf8a7286d950?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Sarah is a caring girl who loves helping in the kitchen. She wants to become a nurse to help sick people.",
+                needs: ["medical care", "education", "nutrition"]
+            },
+            {
+                id: "#008",
+                name: "Joseph Kabuye",
+                age: 9,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 201,
+                status: "at-risk",
+                image: "https://images.unsplash.com/photo-1622109530967-af4e3223c0ad?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Joseph loves reading and storytelling. He entertains other children with his creative stories and jokes.",
+                needs: ["education", "books", "meals"]
+            },
+            {
+                id: "#009",
+                name: "Rebecca Nalubega",
+                age: 13,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 89,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Rebecca is a natural leader among her peers. She organizes games and helps younger children with their studies.",
+                needs: ["education", "leadership training", "nutrition"]
+            },
+            {
+                id: "#010",
+                name: "Emmanuel Kiprotich",
+                age: 5,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 423,
+                status: "medical",
+                image: "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Emmanuel is the youngest in our program. He loves playing with toy cars and needs special medical attention.",
+                needs: ["medical care", "nutrition", "early education"]
+            },
+            {
+                id: "#011",
+                name: "Agnes Nakabuye",
+                age: 16,
+                gender: "female",
+                country: "uganda",
+                waitingDays: 167,
+                status: "at-risk",
+                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Agnes is preparing for her final exams. She dreams of studying medicine and becoming a doctor.",
+                needs: ["education", "exam preparation", "medical books"]
+            },
+            {
+                id: "#012",
+                name: "Isaac Mubiru",
+                age: 8,
+                gender: "male",
+                country: "uganda",
+                waitingDays: 298,
+                status: "urgent",
+                image: "https://images.unsplash.com/photo-1546422401-d884c2db6b76?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                story: "Isaac loves animals and wants to become a veterinarian. He takes care of stray cats around the center.",
+                needs: ["education", "nutrition", "veterinary books"]
+            }
+        ];
+
+        let currentlyDisplayed = 0;
+        const itemsPerLoad = 12;
+        let filteredChildren = [...childrenData];
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeFilters();
+            loadChildren();
+            setupEventListeners();
+        });
+
+        function initializeFilters() {
+            // Check for URL parameters
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('country')) document.getElementById('filterCountry').value = urlParams.get('country');
+            if (urlParams.get('age')) document.getElementById('filterAge').value = urlParams.get('age');
+            if (urlParams.get('gender')) document.getElementById('filterGender').value = urlParams.get('gender');
+            if (urlParams.get('status')) document.getElementById('filterStatus').value = urlParams.get('status');
+            
+            // Apply filters if any are set
+            if (urlParams.toString()) {
+                applyFilters();
+            }
+        }
+
+        function setupEventListeners() {
+            document.getElementById('applyFilters').addEventListener('click', applyFilters);
+            document.getElementById('clearFilters').addEventListener('click', clearFilters);
+            document.getElementById('sortBy').addEventListener('change', sortChildren);
+            document.getElementById('loadMoreBtn').addEventListener('click', loadMoreChildren);
+            document.getElementById('searchName').addEventListener('input', debounce(applyFilters, 500));
+        }
+
+        function applyFilters() {
+            const name = document.getElementById('searchName').value.toLowerCase();
+            const country = document.getElementById('filterCountry').value;
+            const age = document.getElementById('filterAge').value;
+            const gender = document.getElementById('filterGender').value;
+            const status = document.getElementById('filterStatus').value;
+
+            filteredChildren = childrenData.filter(child => {
+                let matches = true;
+
+                if (name && !child.name.toLowerCase().includes(name)) matches = false;
+                if (country && child.country !== country) matches = false;
+                if (gender && child.gender !== gender) matches = false;
+                if (status && child.status !== status) matches = false;
+                
+                if (age) {
+                    const [minAge, maxAge] = age.split('-').map(Number);
+                    if (child.age < minAge || child.age > maxAge) matches = false;
+                }
+
+                return matches;
+            });
+
+            sortChildren();
+            currentlyDisplayed = 0;
+            document.getElementById('childrenGrid').innerHTML = '';
+            loadChildren();
+            updateResultsInfo();
+        }
+
+        function clearFilters() {
+            document.getElementById('searchName').value = '';
+            document.getElementById('filterCountry').value = '';
+            document.getElementById('filterAge').value = '';
+            document.getElementById('filterGender').value = '';
+            document.getElementById('filterStatus').value = '';
+            document.getElementById('sortBy').value = 'waiting-desc';
+            
+            filteredChildren = [...childrenData];
+            sortChildren();
+            currentlyDisplayed = 0;
+            document.getElementById('childrenGrid').innerHTML = '';
+            loadChildren();
+            updateResultsInfo();
+        }
+
+        function sortChildren() {
+            const sortBy = document.getElementById('sortBy').value;
+            
+            filteredChildren.sort((a, b) => {
+                switch(sortBy) {
+                    case 'waiting-desc':
+                        return b.waitingDays - a.waitingDays;
+                    case 'waiting-asc':
+                        return a.waitingDays - b.waitingDays;
+                    case 'age-asc':
+                        return a.age - b.age;
+                    case 'age-desc':
+                        return b.age - a.age;
+                    case 'name-asc':
+                        return a.name.localeCompare(b.name);
+                    case 'name-desc':
+                        return b.name.localeCompare(a.name);
+                    default:
+                        return b.waitingDays - a.waitingDays;
+                }
+            });
+        }
+
+        function loadChildren() {
+            const grid = document.getElementById('childrenGrid');
+            const childrenToShow = filteredChildren.slice(currentlyDisplayed, currentlyDisplayed + itemsPerLoad);
+            
+            childrenToShow.forEach(child => {
+                const childCard = createChildCard(child);
+                grid.appendChild(childCard);
+            });
+            
+            currentlyDisplayed += childrenToShow.length;
+            
+            // Hide load more button if all children are displayed
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            if (currentlyDisplayed >= filteredChildren.length) {
+                loadMoreBtn.style.display = 'none';
+            } else {
+                loadMoreBtn.style.display = 'block';
+            }
+            
+            updateResultsInfo();
+        }
+
+        function loadMoreChildren() {
+            loadChildren();
+        }
+
+        function createChildCard(child) {
+            const card = document.createElement('div');
+            card.className = 'child-card';
+            card.innerHTML = `
+                <div class="child-image">
+                    <img src="${child.image}" alt="${child.name}" loading="lazy">
+                    <div class="child-id">${child.id}</div>
+                    ${child.status === 'urgent' ? '<div class="urgent-badge">Urgent</div>' : ''}
+                    ${child.status === 'medical' ? '<div class="medical-badge">Medical Need</div>' : ''}
+                    ${child.status === 'at-risk' ? '<div class="risk-badge">At Risk</div>' : ''}
+                </div>
+                <div class="child-info">
+                    <h3 class="child-name">${child.name}</h3>
+                    <div class="child-details">
+                        <span class="child-age">${child.age} years old</span>
+                        <span class="child-waiting">Waiting ${child.waitingDays} days</span>
+                        <span class="child-country">${child.country.charAt(0).toUpperCase() + child.country.slice(1)}</span>
+                    </div>
+                    <p class="child-story">${child.story}</p>
+                    <div class="child-actions">
+                        <a href="child-details.html?id=${child.id}" class="btn btn-secondary">More Details</a>
+                        <a href="mailto:support@aloysiusministries.org?subject=Sponsor ${child.name} ${child.id}&body=I would like to sponsor ${child.name} (${child.id}). Please provide me with more information about the sponsorship process." 
+                           class="btn btn-primary">Sponsor Now</a>
+                    </div>
+                </div>
+            `;
+            return card;
+        }
+
+        function updateResultsInfo() {
+            const resultCount = document.getElementById('resultCount');
+            const totalChildren = document.getElementById('totalChildren');
+            
+            resultCount.textContent = `Showing ${Math.min(currentlyDisplayed, filteredChildren.length)} of ${filteredChildren.length} children`;
+            totalChildren.textContent = filteredChildren.length;
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Load more children initially
+        window.addEventListener('load', function() {
+            // Add some more sample children for demonstration
+            const additionalChildren = Array.from({length: 36}, (_, i) => ({
+                id: `#${String(i + 13).padStart(3, '0')}`,
+                name: `Child ${i + 13}`,
+                age: Math.floor(Math.random() * 15) + 4,
+                gender: Math.random() > 0.5 ? 'male' : 'female',
+                country: 'uganda',
+                waitingDays: Math.floor(Math.random() * 400) + 30,
+                status: ['urgent', 'at-risk', 'medical', ''][Math.floor(Math.random() * 4)],
+                image: `https://images.unsplash.com/photo-${1500000000000 + Math.floor(Math.random() * 100000000)}?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80`,
+                story: `This child needs your support to access education, nutrition, and hope for a better future.`,
+                needs: ["education", "nutrition", "medical care"]
+            }));
+            
+            childrenData.push(...additionalChildren);
+            filteredChildren = [...childrenData];
+            updateResultsInfo();
+        });
+    </script>
+</body>
+</html>
